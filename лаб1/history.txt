@@ -1,0 +1,93 @@
+    1  mkdir lab1_bash
+    2  cd lab1_bash
+    3  uname -a
+    4  sudo apt update
+    5  cat /etc/apt/sources.list
+    6  sudo apt install vim
+    7  cd ~
+    8  cd Downloads
+    9  man ls
+   10  ls -l
+   11  dpkg -i package.deb
+   12  sudo dpkg -i package.deb
+   13  cd /
+   14  sudo su
+   15  echo "hi all"
+   16  echo "$PWD hi all here!"
+   17  touch hi.sh
+   18  cd ~
+   19  touch hi.sh
+   20  echo $PATH
+   21  vi hi.sh
+   22  ./hi.sh
+   23  chmod a+x hi.sh
+   24  chmod a+rwx hi.sh
+   25  ./hi.sh
+   26  ./hi.sh Ukraine
+   27  mkdir scripts
+   28  cp hi.sh scripts/
+   29  cp scripts Documents/
+   30  cp -r scripts Documents/
+   31  cd scripts
+   32  mv hi.sh ../
+   33  cd ../
+   34  rm scripts
+   35  rm -r scripts
+   36  cd /bin
+   37  ls -l
+   38  cd ../../
+   39  tar -cvf scripts.tar hi.sh
+   40  cd ~
+   41  tar -cvf scripts.tar hi.sh
+   42  cat hi.sh
+   43  cat /var/log/syslog
+   44  tail -n 20 /var/log/syslog
+   45  less /var/log/syslog
+   46  cd /
+   47  find . -name "dhcp" 2>/dev/null
+   48  find . -name "*dhcp*" 2>/dev/null
+   49  find . -name "*dhcp*" 2>/dev/null | grep -i --color "etc"
+   50  ping google.com
+   51  ping google.com > ping.log &
+   52  sudo ping google.com
+   53  vlc &
+   54  ls -l
+   55  cd /bin
+   56  ls
+   57  echo $PATH
+   58  printenv
+   59  whoami
+   60  cd /etc/
+   61  ls
+   62  cd ..
+   63  cd lib
+   64  ls
+   65  dmesg
+   66  sudo dmesg
+   67  ls /dev
+   68  sudo dmesg -c
+   69  sudo dmesg | tail
+   70  df -h
+   71  cd /home
+   72  ls -l
+   73  lsmod
+   74  cd /proc
+   75  cat cpuinfo
+   76  echo 1 > /proc/sys/net/ipv4/ip_forward
+   77  sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+   78  sudo su
+   79  ifconfig
+   80  ip a
+   81  ip link show
+   82  cd ~
+   83  echo "vika" > 1.txt
+   84  cat 1.txt
+   85  echo "vasya" > 2.txt
+   86  cat 2.txt
+   87  diff 1.txt 2.txt
+   88  history
+   89  lspci
+   90  sudo apt install pciutils
+   91  lspci
+   92  history > history.txt
+Виконав: student, Дата: Sat Sep  5 12:22:34 UTC 2026
